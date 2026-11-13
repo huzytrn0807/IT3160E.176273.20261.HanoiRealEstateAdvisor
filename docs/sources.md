@@ -1,0 +1,8 @@
+# Nguồn và phạm vi sử dụng
+
+- **Dữ liệu đầu vào.** Tệp `vietnam_real_estate.csv` người dùng cung cấp từ [Vietnam Real Estates trên Kaggle](https://www.kaggle.com/datasets/yashdev01/vietnam-real-estates). Tệp chứa tin đăng và nhãn địa danh của nguồn. Xem `published_date_range` trong báo cáo chất lượng để biết khoảng thời gian quan sát thực tế. Trang nguồn chưa cung cấp thông tin giấy phép đọc được trong lần đối chiếu này. Xác nhận quyền chia sẻ với nhóm trước khi đưa bản dữ liệu lên một dịch vụ khác.
+- **Bản Hai Bà Trưng.** Giữ các cột quen thuộc như tiêu đề, địa danh, dự án, giá, diện tích, số phòng và đặc điểm nổi bật. Bản Hà Nội thêm loại hình chuẩn hóa, dấu hiệu phân loại bán, trường mặt tiền, chiều sâu, độ rộng đường và các cờ rà soát. Xuất thẳng bằng Python với UTF-8 BOM và dấu phẩy.
+- **Tài liệu đồ án.** Bản Word `Intro AI - Project.docx` và ba ảnh phân công của người dùng xác định yêu cầu của năm thành viên. Phạm vi cập nhật theo lựa chọn của người dùng là Hà Nội, căn hộ và nhà đã xây, bỏ đất trống.
+- **Tham khảo CSP.** [tomholland15407/hanoi-real-estate-advisor](https://github.com/tomholland15407/hanoi-real-estate-advisor) là nguồn tham khảo về cách mô tả biến, miền và ràng buộc.
+- **Tham khảo mô hình.** [vlozg/houseprice_predict](https://github.com/vlozg/houseprice_predict) tham khảo cách trình bày bài toán hồi quy, thí nghiệm và báo cáo. Repo này dùng dữ liệu Ames, Iowa. Dự án Hà Nội huấn luyện trên tin rao địa phương.
+- **Hạ tầng và quy hoạch.** Mỗi bản ghi trong `data/knowledge/development_facts.json` có nguồn chính thức, ngày công bố và địa danh được nêu. Kết quả suy luận phản ánh mốc trong tài liệu nguồn và độ phủ của kho tri thức. Tập tin rao thiếu tọa độ và ranh giới quy hoạch, nên hệ thống chỉ đối chiếu cấp khu vực.

@@ -1,0 +1,356 @@
+:root {
+  --estate-ink: #102f26;
+  --estate-forest: #173e33;
+  --estate-deep: #0c2922;
+  --estate-green: #225b48;
+  --estate-mint: #d8e8dc;
+  --estate-gold: #d8c7a0;
+  --estate-paper: #fbfaf5;
+  --estate-canvas: #f4f3ec;
+  --estate-line: #dce3d8;
+  --estate-muted: #4d665c;
+  --estate-shadow: 0 10px 30px rgba(21, 49, 37, 0.07);
+  --estate-sans: "DM Sans", "Segoe UI", sans-serif;
+  --estate-serif: "Cambria", "Segoe UI", sans-serif;
+}
+
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"] {
+  background: var(--estate-canvas);
+  color: var(--estate-ink);
+}
+
+[data-testid="stHeader"] {
+  background: transparent;
+}
+
+[data-testid="stToolbar"],
+[data-testid="stDecoration"],
+#MainMenu,
+footer:not(.estate-footer) {
+  display: none;
+}
+
+.block-container {
+  max-width: 1260px;
+  padding: 1.45rem clamp(1rem, 4vw, 3rem) 3.5rem;
+}
+
+[data-testid="stAppViewContainer"] :is(p, label, button, input) {
+  font-family: var(--estate-sans);
+}
+
+[data-testid="stMarkdownContainer"] :is(h2, h3) {
+  color: var(--estate-ink);
+}
+
+[data-testid="stMarkdownContainer"] h2 {
+  font-size: clamp(1.55rem, 2.9vw, 2.15rem);
+  letter-spacing: -0.035em;
+}
+
+[data-testid="stRadio"] [role="radiogroup"] {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.25rem 0.4rem;
+}
+
+[data-testid="stRadio"] label {
+  min-height: 2.55rem;
+  margin: 0;
+  padding: 0.36rem 0.7rem;
+  border: 1px solid transparent;
+  border-radius: 0.65rem;
+  transition: background 140ms ease, border-color 140ms ease;
+}
+
+[data-testid="stRadio"] label:hover {
+  background: #e6ebe1;
+}
+
+[data-testid="stRadio"] label:has(input:checked) {
+  border-color: #ccdace;
+  background: #e0eae0;
+}
+
+[data-testid="stRadio"] label:has(input:focus-visible) {
+  outline: 2px solid var(--estate-green);
+  outline-offset: 2px;
+}
+
+[data-testid="stForm"] {
+  border: 1px solid var(--estate-line);
+  border-radius: 1rem;
+}
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+  border-color: var(--estate-line);
+}
+
+[data-testid="stForm"] {
+  padding: clamp(0.8rem, 2.4vw, 1.35rem);
+  background: var(--estate-paper);
+  box-shadow: var(--estate-shadow);
+}
+
+[data-testid="stWidgetLabel"] p {
+  color: var(--estate-ink);
+  font-size: 0.91rem;
+  font-weight: 650;
+}
+
+[data-testid="stAppViewContainer"] [data-baseweb="select"] > div,
+[data-testid="stAppViewContainer"] [data-baseweb="input"] {
+  border-color: var(--estate-line);
+  border-radius: 0.65rem;
+}
+
+[data-testid="stAppViewContainer"] :is(button[kind="primary"], button[kind="primaryFormSubmit"]) {
+  background: var(--estate-forest);
+  border-color: var(--estate-forest);
+  color: #fff;
+}
+
+[data-testid="stAppViewContainer"] :is(button[kind="primary"], button[kind="primaryFormSubmit"]):hover {
+  background: var(--estate-green);
+  border-color: var(--estate-green);
+  color: #fff;
+}
+
+[data-testid="stAppViewContainer"] :is(button[kind="secondary"], button[kind="secondaryFormSubmit"]) {
+  border-color: #bacdc0;
+  color: var(--estate-ink);
+  background: var(--estate-paper);
+}
+
+[data-testid="stAppViewContainer"] :is(button[kind="secondary"], button[kind="secondaryFormSubmit"]):hover {
+  border-color: var(--estate-green);
+  color: var(--estate-green);
+}
+
+[data-testid="stAppViewContainer"] :is(button[kind], [data-testid="stLinkButton"] a) {
+  border-radius: 0.65rem;
+  min-height: 2.6rem;
+  font-weight: 650;
+}
+
+[data-testid="stAppViewContainer"] :is(button, a):focus-visible {
+  outline: 2px solid var(--estate-green);
+  outline-offset: 3px;
+}
+
+.estate-brand {
+  color: var(--estate-deep);
+  font: 700 clamp(1.15rem, 2.4vw, 1.65rem)/1.15 var(--estate-serif);
+  letter-spacing: -0.02em;
+}
+
+.estate-hero {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-items: center;
+  min-height: clamp(17rem, 31vw, 25rem);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(216, 199, 160, 0.25);
+  border-radius: clamp(1rem, 2.7vw, 1.85rem);
+  background-color: var(--estate-deep);
+  background-image:
+    linear-gradient(96deg, rgba(8, 30, 24, 0.96) 0%, rgba(8, 30, 24, 0.85) 39%, rgba(8, 30, 24, 0.28) 100%),
+    var(--estate-hero-image, none);
+  background-position: center, center 52%;
+  background-size: cover;
+  box-shadow: 0 16px 42px rgba(16, 47, 38, 0.18);
+}
+
+.estate-hero-content {
+  width: min(100%, 55rem);
+  padding: clamp(1.5rem, 5.7vw, 4.4rem);
+}
+
+.estate-kicker,
+.estate-section-label {
+  margin: 0 0 0.72rem;
+  color: var(--estate-green);
+  font: 700 0.74rem/1.45 var(--estate-sans);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.estate-hero .estate-kicker {
+  color: var(--estate-gold);
+}
+
+.estate-hero h1 {
+  max-width: 12.4em;
+  margin: 0;
+  padding: 0;
+  color: #fffcf0;
+  font: 650 clamp(2rem, 5.8vw, 4.3rem)/1.13 var(--estate-sans);
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.estate-hero .estate-lead,
+.estate-lead {
+  max-width: 39rem;
+  margin: 0.95rem 0 0;
+  color: var(--estate-muted);
+  font: 400 clamp(0.93rem, 1.55vw, 1.12rem)/1.65 var(--estate-sans);
+}
+
+.estate-hero .estate-lead {
+  color: #f3f5ed;
+}
+
+.estate-card {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 1.1rem 1.2rem 1.18rem;
+  border: 1px solid var(--estate-line);
+  border-radius: 1rem;
+  background: var(--estate-paper);
+  color: var(--estate-ink);
+  box-shadow: var(--estate-shadow);
+}
+
+.estate-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+}
+
+.estate-card-category {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  background: #e5ece1;
+  color: #254937;
+  font: 700 0.75rem/1.32 var(--estate-sans);
+}
+
+.estate-card .estate-card-title {
+  margin: 0.72rem 0 0.4rem;
+  padding: 0;
+  color: var(--estate-ink);
+  font: 650 1.04rem/1.44 var(--estate-sans);
+  overflow-wrap: anywhere;
+}
+
+.estate-card-price {
+  color: var(--estate-forest);
+  font: 700 clamp(1.36rem, 2.8vw, 1.85rem)/1.1 var(--estate-serif);
+  white-space: nowrap;
+}
+
+.estate-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.22rem 0.55rem;
+  margin: 0.36rem 0 0;
+  color: var(--estate-muted);
+  font: 500 0.83rem/1.46 var(--estate-sans);
+}
+
+.estate-card-scores {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin-top: 0.87rem;
+}
+
+.estate-score {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.12rem;
+  min-height: 3.35rem;
+  padding: 0.48rem 0.55rem;
+  border: 1px solid transparent;
+  border-radius: 0.65rem;
+  font: 600 0.77rem/1.32 var(--estate-sans);
+  overflow-wrap: anywhere;
+}
+
+.estate-score strong {
+  font-size: 0.92rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.015em;
+}
+
+.estate-score-needs {
+  border-color: #d3e5d4;
+  background: #e7f1e6;
+  color: #1f4b34;
+}
+
+.estate-score-infra {
+  border-color: #e6dcc4;
+  background: #f3ebda;
+  color: #59451e;
+}
+
+.estate-card-reason {
+  margin: 0.74rem 0 0;
+  color: var(--estate-muted);
+  font: 500 0.84rem/1.52 var(--estate-sans);
+}
+
+.estate-empty,
+.estate-disclaimer {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--estate-line);
+  border-radius: 0.8rem;
+  background: #ecf1e8;
+  color: var(--estate-muted);
+  font: 500 0.89rem/1.6 var(--estate-sans);
+}
+
+.estate-empty {
+  border-style: dashed;
+  background: var(--estate-paper);
+}
+
+.estate-footer {
+  margin-top: 1.35rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--estate-line);
+  color: var(--estate-muted);
+  font: 500 0.8rem/1.6 var(--estate-sans);
+}
+
+@media (max-width: 640px) {
+  .block-container {
+    padding-top: 1.1rem;
+  }
+
+  .estate-hero {
+    min-height: 18.3rem;
+    background-image:
+      linear-gradient(97deg, rgba(8, 30, 24, 0.94), rgba(8, 30, 24, 0.56)),
+      var(--estate-hero-image, none);
+    background-position: center, 62% center;
+  }
+
+  .estate-hero-content,
+  .estate-card {
+    padding: 1.1rem;
+  }
+
+  [data-testid="stRadio"] [role="radiogroup"] > label {
+    padding: 0.3rem 0.47rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-testid="stRadio"] [role="radiogroup"] > label {
+    transition: none;
+  }
+}

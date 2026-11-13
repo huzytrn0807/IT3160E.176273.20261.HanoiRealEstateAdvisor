@@ -1,0 +1,69 @@
+[
+  {
+    "fact_id": "metro-2a-launch",
+    "title": "Metro 2A Cát Linh – Hà Đông",
+    "status": "Đã đưa vào khai thác theo nguồn",
+    "status_code": "operational_at_source_date",
+    "districts": ["Hà Đông"],
+    "description": "Tuyến Cát Linh – Hà Đông được bàn giao và đưa vào khai thác ngày 06/11/2021.",
+    "source_name": "Cổng Thông tin điện tử Chính phủ",
+    "source_url": "https://thanglong.chinhphu.vn/chinh-thuc-ban-giao-dua-vao-khai-thac-tuyen-duong-sat-do-thi-dau-tien-10335438.htm",
+    "published_at": "2021-11-06"
+  },
+  {
+    "fact_id": "metro-3-elevated-launch",
+    "title": "Đoạn trên cao Nhổn – Cầu Giấy",
+    "status": "Đã đưa vào khai thác theo nguồn",
+    "status_code": "operational_at_source_date",
+    "districts": ["Cầu Giấy"],
+    "description": "Đoạn trên cao của tuyến Nhổn – ga Hà Nội bắt đầu vận hành thương mại ngày 08/08/2024. Bản ghi này chỉ mô tả đoạn Nhổn – Cầu Giấy.",
+    "source_name": "Báo Điện tử Chính phủ",
+    "source_url": "https://en.baochinhphu.vn/ha-noi-second-metro-line-starts-commercial-run-11124080816055018.htm",
+    "published_at": "2024-08-08"
+  },
+  {
+    "fact_id": "ring-road-4-component-21",
+    "title": "Vành đai 4, dự án thành phần 2.1",
+    "status": "Có ghi nhận thi công tại thời điểm nguồn",
+    "status_code": "works_reported_at_source_date",
+    "districts": ["Mê Linh", "Đan Phượng", "Hoài Đức"],
+    "description": "Bản tin của Hà Nội ghi nhận hoạt động thi công ở ba huyện theo địa danh được dùng tại thời điểm công bố.",
+    "source_name": "Cổng Thông tin điện tử Thành phố Hà Nội",
+    "source_url": "https://hanoi.gov.vn/tin-tuc-su-kien-noi-bat/pho-chu-tich-ubnd-thanh-pho-duong-duc-tuan-tham-chuc-tet-can-bo-cong-nhan-vien-thi-cong-du-an-duong-vanh-dai-4-va-cong-ty-cong-vien-cay-xanh-ha-noi-4250124130037906.htm",
+    "published_at": "2025-01-24"
+  },
+  {
+    "fact_id": "road-32-alignment",
+    "title": "Phương án tuyến đường 32 từ đường 70 đến Vành đai 4",
+    "status": "Đã công bố phương án tuyến theo nguồn",
+    "status_code": "alignment_announced",
+    "districts": ["Nam Từ Liêm", "Bắc Từ Liêm", "Hoài Đức", "Đan Phượng"],
+    "description": "Viện Quy hoạch Xây dựng Hà Nội công bố phương án tuyến và vị trí công trình ngày 05/08/2025. Nguồn nêu cả địa danh cũ và tên phường, xã tại thời điểm công bố.",
+    "source_name": "Viện Quy hoạch Xây dựng Hà Nội",
+    "source_url": "https://vqh.hanoi.gov.vn/index.php?language=vi&nv=news&op=tin-tuc-hoat-dong%2Fhoi-nghi-cong-bo-phuong-an-tuyen-vi-tri-cong-trinh-xay-dung-tuyen-duong-32-doan-tu-duong-70-den-vanh-dai-4-3028.html",
+    "published_at": "2025-08-05"
+  },
+  {
+    "fact_id": "ring-road-2-vinh-tuy-nga-tu-so",
+    "title": "Vành đai 2 trên cao, đoạn Vĩnh Tuy – Ngã Tư Sở",
+    "status": "Đã thông xe theo nguồn",
+    "status_code": "operational_at_source_date",
+    "districts": ["Hai Bà Trưng", "Đống Đa", "Thanh Xuân", "Hoàng Mai"],
+    "description": "Hà Nội thông xe đoạn tuyến Vĩnh Tuy – Ngã Tư Sở ngày 11/01/2023. Danh sách khu vực là các quận được Cổng Thông tin điện tử Hà Nội nêu khi công bố.",
+    "source_name": "Cổng Thông tin điện tử Thành phố Hà Nội",
+    "source_url": "https://hanoi.gov.vn/tin-tuc-su-kien-noi-bat/ha-noi-thong-xe-duong-vanh-dai-2-tren-cao-doan-tu-cau-vinh-tuy-den-nga-tu-so-40002855336.htm",
+    "published_at": "2023-01-11"
+  },
+  {
+    "fact_id": "tran-hung-dao-bridge-groundbreaking",
+    "title": "Dự án cầu Trần Hưng Đạo",
+    "status": "Đã khởi công theo nguồn",
+    "status_code": "works_reported_at_source_date",
+    "districts": ["Hoàn Kiếm", "Hai Bà Trưng", "Long Biên"],
+    "description": "Hà Nội công bố khởi công cầu Trần Hưng Đạo ngày 09/10/2025. Các nhãn quận trong dữ liệu lấy theo địa điểm được nêu trong Quyết định 3213/QĐ-UBND.",
+    "source_name": "Cổng Thông tin điện tử Thành phố Hà Nội",
+    "source_url": "https://hanoi.gov.vn/tin-tuc-su-kien-noi-bat/ha-noi-khoi-cong-xay-dung-cau-tran-hung-dao-4251009184826831.htm",
+    "scope_url": "https://dautuhanoi.hanoi.gov.vn/uploads/files/1.%20C%E1%BA%A7u%20TH%C4%90/3213%20Q%C4%90%20ph%C3%AA%20duy%E1%BB%87t%20DATP2%20cau%20TrHDao%2026_6_2025.pdf",
+    "published_at": "2025-10-09"
+  }
+]
