@@ -4,6 +4,5 @@ __pycache__/
 *.py[cod]
 .env
 data/raw/
-data/processed/hanoi_properties_final.csv
 models/
 *.tmp

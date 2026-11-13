@@ -17,11 +17,9 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
-Sau khi clone, tải `vietnam_real_estate.csv` từ [Kaggle](https://www.kaggle.com/datasets/yashdev01/vietnam-real-estates), đặt vào `data/raw/` và chạy các lệnh sau để tạo CSV đã xử lý, báo cáo và mô hình. Nếu đã có CSV đã xử lý và mô hình tương thích, có thể chuyển thẳng sang bước mở ứng dụng.
+Repo đã kèm `data/processed/hanoi_properties_final.csv`. Sau khi clone, huấn luyện mô hình từ CSV này để dùng trang Ước tính giá. Nếu đã có mô hình tương thích, có thể mở ứng dụng ngay.
 
 ```powershell
-.\.venv\Scripts\python.exe scripts\build_hanoi_dataset.py data\raw\vietnam_real_estate.csv
-.\.venv\Scripts\python.exe scripts\profile_hanoi_dataset.py data\processed\hanoi_properties_final.csv
 .\.venv\Scripts\python.exe scripts\train_models.py --random-forest
 ```
 
@@ -33,6 +31,13 @@ Mở ứng dụng và chạy kiểm thử bằng các lệnh sau (dùng Terminal
 ```
 
 Khi môi trường dùng phiên bản scikit-learn khác bản huấn luyện, chạy lại lệnh train trong môi trường đó. Chỉ dùng tệp mô hình do nhóm tạo từ pipeline này.
+
+Để chạy lại bước làm sạch và tạo báo cáo, tải `vietnam_real_estate.csv` từ [Kaggle](https://www.kaggle.com/datasets/yashdev01/vietnam-real-estates) và đặt vào `data/raw/`.
+
+```powershell
+.\.venv\Scripts\python.exe scripts\build_hanoi_dataset.py data\raw\vietnam_real_estate.csv
+.\.venv\Scripts\python.exe scripts\profile_hanoi_dataset.py data\processed\hanoi_properties_final.csv
+```
 
 Để thuyết trình đồ án, mở giao diện riêng có biểu đồ dữ liệu, đánh giá mô hình và minh họa thuật toán CSP.
 
